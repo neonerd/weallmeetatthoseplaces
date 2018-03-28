@@ -1,0 +1,41 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono|Roboto+Mono|Source+Code+Pro');
+
+// Variables
+$clr-black: #000;
+
+// Main
+
+body {
+  background-color: $clr-black;
+  color: #fff;
+  font-family: "Source Code Pro";
+
+  margin: 0;
+  padding: 0;
+}
+
+#stage {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  &.disabled {
+    opacity: 0.1;
+    background-color: lighten($clr-black, 20%);
+  }
+}
+
+p {
+  display: block;
+  font-size: 40px;
+  text-align: center;
+}
