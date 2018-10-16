@@ -13,7 +13,6 @@ interface TwoDimensionalPoint {
 }
 
 function isPointBellow (point:TwoDimensionalPoint, comparisonPoint:TwoDimensionalPoint) {
-  console.log('comparing', point.y, comparisonPoint.y)
   if (point.y >= comparisonPoint.y) {
     return true
   }
@@ -135,7 +134,7 @@ class FaceGrid {
     const points: Array<TwoDimensionalPoint> = []
 
     this.coordsMap.map((row, y:number) => {
-      const rowPoints = row.map((val:number, x:number) => {
+      row.map((val:number, x:number) => {
         if (val === 1) {
           points.push({
             x: translateRange(x, 0, this.width, 0, canvasWidth),
