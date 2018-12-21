@@ -1,3 +1,31 @@
+/*
+
+Character archetypes:
+
+- student
+    - film
+    - literature
+    - sociology
+    - anthropology
+    - philosophy
+    - journalism
+    - marketing
+    - law
+    - media
+    - art
+    - 
+
+- work
+    - ad agency
+    - production company
+    - McKinsey
+    - KPMG
+    - Deloitte
+    - 
+
+*/
+
+
 enum CharacterAttributeType {
     Scalar,
     Archetype
@@ -28,7 +56,6 @@ class Character {
     sex: CharacterSex
     name: string
     age: number
-    
 
     attributes: any[]
     feelings: any[]
